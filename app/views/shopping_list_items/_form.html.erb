@@ -12,7 +12,7 @@
   <% end %>
 
     <%= f.text_field :name, placeholder: 'Name', autofocus: true %>
-    <%= f.hidden_field :need %><br>
+    <%= f.hidden_field :need, value: :true %><br>
     <%= f.submit 'Add', class: "btn btn-positive btn-block"%>
 <% end %>
 </div>
