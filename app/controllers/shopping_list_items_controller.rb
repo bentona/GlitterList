@@ -54,7 +54,7 @@ class ShoppingListItemsController < ApplicationController
     end
 
     def set_all_items
-      @shopping_list_items = ShoppingListItem.all.order(:name)
+      @shopping_list_items = ShoppingListItem.all.order(need: :desc, name: :asc)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
