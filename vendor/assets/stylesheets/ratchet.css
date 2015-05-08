@@ -1260,8 +1260,8 @@ select {
   font-style: normal;
   font-weight: normal;
 
-  src: font-url("../assets/ratchicons.eot");
-  src: font-url("../assets/ratchicons.eot?#iefix") format("embedded-opentype"), font-url("../assets/ratchicons.woff") format("woff"), font-url("../assets/ratchicons.ttf") format("truetype"), font-url("../assets/ratchicons.svg#svgFontName") format("svg");
+  src: font-url("ratchicons.eot");
+  src: font-url("ratchicons.eot?#iefix") format("embedded-opentype"), font-url("ratchicons.woff") format("woff"), font-url("ratchicons.ttf") format("truetype"), font-url("ratchicons.svg#svgFontName") format("svg");
 }
 .icon {
   display: inline-block;
