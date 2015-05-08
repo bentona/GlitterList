@@ -1,0 +1,8 @@
+<ul class='table-view'>
+<% @shopping_list_items.each do |item| %>
+  <li class="table-view-cell">
+    <%= item.name %>
+    <%= link_to "delete", delete_item_path(item), class: "btn btn-negative" %>
+  </li>
+<% end %>
+</ul>

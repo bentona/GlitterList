@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Glitterlist</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+    <!-- Sets initial viewport load and disables zooming  -->
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+  <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Include the compiled Ratchet CSS -->
+  <!--
+  <link href="ratchet.css" rel="stylesheet">
+  <script src="ratchet.js"></script>
+  -->
+</head>
+<body>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+<nav class="bar bar-tab">
+  <%= link_to root_path, class: "tab-item active" do %>
+    <span class="icon icon-bars"></span>
+    <span class="tab-label">List</span>
+  <% end %>
+  <%= link_to delete_items_path, class: "tab-item" do %>
+    <span class="icon icon-trash"></span>
+    <span class="tab-label">Edit Items</span>
+  <% end %>
+  <%= link_to new_shopping_list_item_path, class: "tab-item" do %>
+    <span class="icon icon-plus"></span>
+    <span class="tab-label">Add Item</span>
+  <% end %>
+</nav>
+<%= yield %>
+
+
+</body>
+</html>
