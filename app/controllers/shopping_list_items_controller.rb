@@ -24,7 +24,6 @@ class ShoppingListItemsController < ApplicationController
   # POST /shopping_list_items
   # POST /shopping_list_items.json
   def create
-    puts shopping_list_item_params
     @shopping_list_item = ShoppingListItem.new(shopping_list_item_params)
     @shopping_list_item.save
     redirect_to shopping_list_items_url
