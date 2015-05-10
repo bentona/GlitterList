@@ -1,7 +1,7 @@
 <div class='content'>
 <div class='card'>
     <% @shopping_list_items.each do |item| %>
-      <%= link_to item.name, toggle_item_path(item), class: "btn btn-block #{item.need ? 'btn-negative' : ''}", method: :get %>
+      <%= link_to item.name, toggle_item_path(item), class: "btn btn-block #{item.need ? 'btn-primary' : ''}", method: :get %>
     <% end %>
 </div>
 </div>
